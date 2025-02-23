@@ -1,8 +1,7 @@
-namespace BookstoreManagementAPI.Models;
+namespace BookstoreManagementAPI.Communication.Requests;
 
-public class Book
+public class RequestUpdateBookJson
 {
-  public Guid Id { get; init; } = Guid.NewGuid();
   public required string Title { get; set; }
   public required string Author { get; set; }
   public required string Genre { get; set; }
